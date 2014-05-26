@@ -1,0 +1,280 @@
+html {
+	padding: 30px 0 100px 0;
+	margin: 0;
+	border-top: 70px solid #003580;
+	background-color: #fff;
+	color: #333;
+	font-family: arial, sans-serif;
+	font-size: 13px;
+	position: relative;
+}
+
+body {
+	padding: 0;
+	margin: 0 auto;
+	width: 960px;
+}
+
+section {
+	margin: 0 0 20px 0;
+	clear: both;
+}
+
+h1 {
+	font-size: 32px;
+	color: #0896ff;
+}
+
+h2 {
+	font-size: 22px;
+	font-weight: normal;
+	color: #666;
+}
+
+/* header */
+
+.header {
+	border-bottom: 1px dotted #ccc;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+.hotel_name {
+	margin: 0 0 5px 0;
+}
+
+.hotel_address {
+	color: #999;
+}
+
+.stars {
+	color: #feba02;
+}
+
+/* photos */
+
+.photos ul {
+	list-style: none;
+	padding: 0;
+	float: left;
+	width: 680px;
+}
+
+.photos .one_photo {
+	display: inline;
+}
+
+.photos .one_photo img {
+	margin: 3px;
+	width: 80px;
+}
+
+/* reviews */
+
+.reviews_list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.one_review {
+	padding: 10px 10px 10px 100px;
+	background-color: #e6edf6;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	position: relative;
+	min-height: 60px;
+	list-style: none;
+}
+
+.one_review cite:before {
+	content: '— ';
+}
+
+.review_score {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 80px;
+	background-color: #003580;
+	color: #fff;
+	text-align: center;
+	font-size: 48px;
+	border-radius: 5px;
+}
+
+.review_content {
+	padding: 0;
+	margin: 0;
+}
+
+.review_content cite {
+	display: block;
+	margin-top: 5px;
+}
+
+/* rooms table */
+
+.button {
+	background-color: #0896ff;
+	border-radius: 2px solid #fff;
+	border: 2px solid #fff;
+	padding: 5px 15px;
+	color: #fff;
+	font-weight: bold;
+	box-shadow: 0 0 3px #666;
+	font-size: 13px;
+}
+
+.rooms_table {
+	width: 100%;
+}
+
+.rooms_table th, .rooms_table td {
+	padding: 5px;
+}
+
+.rooms_table tr:nth-child(2n) {
+	background: #e6edf6;
+}
+
+.rooms_table th {
+	background-color: #003580;
+	text-align: left;
+	color: #fff;
+	font-weight: bold;
+	padding: 10px 5px;
+}
+
+.rooms_table .room_name {
+	font-weight: bold;
+}
+
+.rooms_table .room_occupancy {
+	text-align: center;
+	width: 100px;
+}
+
+.rooms_table .room_price {
+	text-align: right;
+	width: 100px;
+}
+
+.rooms_table .room_quantity {
+	text-align: center;
+	width: 150px;
+}
+
+.rooms_table tfoot td {
+	padding-top: 10px;
+	text-align: right;
+}
+
+
+
+/* footer */
+
+.footer {
+	color: #fff;
+	display: block;
+	width: 100%;
+	text-align: center;
+	background: #003580;	
+	margin: 0;
+	padding: 30px 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+/* Facilities */
+
+.facilities ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+}
+
+.facilities li {
+	display: inline-block;
+	width: 220px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin: 5px;
+	border-radius: 3px;
+}
+
+.facilities li:before {
+	content: '✔ ';
+	color: #0896ff;
+}
+
+/* Custom */
+.sortReviewsByScore, .sortReviewsByAuthor, .paginationLink {
+	font-size: 12px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.pageActive {
+	background: #003580;
+}
+
+/* Carousel */
+#carousel {
+	width:255px;
+	height:290px;
+	float: left;
+}
+
+#carousel #next {
+	margin-left: 6.4em;
+}
+#carousel #prev {
+
+}
+
+#slides {
+	overflow:hidden;
+	/* fix ie overflow issue */
+	position:relative;
+	width:210px;
+	height:240px;
+	border:1px solid #ccc;
+}
+
+/* remove the list styles, width : item width * total items */	
+#slides ul {
+	position:relative;
+	left:0;
+	top:0;
+	list-style:none;
+	margin:0;
+	padding:0;	
+	width:750px;			
+}
+
+/* width of the item, in this case I put 250x250x gif */
+#slides li {
+	width:210px;
+	height:240px;	
+	float:left;
+	list-style:none;
+}
+#slides li small {
+	margin-left: 10px;
+}
+#slides li img {
+	width: 92%;
+	height:200px;
+	overflow: hidden;
+	padding:5px !important;
+}
+
+.paginatedDiv_list {
+	padding: 5px 0px;
+}
+
+.clear {clear:both}
